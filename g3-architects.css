@@ -15,6 +15,7 @@ header{
 .display-flex{
     display: flex;
 }
+
 .btn-primary{
     background-color: #FF900E;
     color:white ;
@@ -23,6 +24,18 @@ header{
     font-weight: 600;
     border-radius: 8px;
     border: none;
+}
+.btn-primary:hover{
+    background-color:#424242;
+    color: whitesmoke;
+}
+
+/* primary-bg */
+.
+
+/* dark 01 */
+.text-soft-black{
+    color: #131313;
 }
 /* dark 02 */
 .text-gray{
@@ -34,10 +47,23 @@ header{
     color:#727272;
 }
 
+.bg-primary{
+  background-color:#FF900E;
+}
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
     
 }
+
+#dark1{
+color:  #131313;
+}
+
+#dark3{
+color:  #727272;
+}
+
+
 
 /* header styles */
 
@@ -84,12 +110,51 @@ margin-right: 30px;
 }
 .banner-image{
     width: 100%;
+    padding-bottom: 30px;
 
 }
+main >section{
+    margin-top: 100px;
+}
 
+/* quick list feature */
+.quick-list{
+    max-width: 1440px;
+    gap: 30px;
+    align-items: center;
+    padding: 0 25px;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+}
+.team-images img{
+    width: 100%;
+    border-radius: 15px;
+}
+.quick-list-content{
+    width: 50%;
+}
+.quick-list-title{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.quick-list-descripton{
+    font-weight: 400;
+    font-size: 1rem;
+}
 /* resposive media */
 @media  screen and (max-width:576px) {
 .display-flex{
     flex-direction: column;
 }
+.quick-list-content{
+    width: 100%;
 }
+.team-images{
+    width: 100%;
+}
+}
+
